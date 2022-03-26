@@ -1,6 +1,7 @@
 import React from 'react';
 import './Movie.css';
-const Movie = ({ movie }) => {
+const Movie = ({ movie, addToCart }) => {
+    console.log(addToCart);
     return (
         <div className='movie'>
             <img src={movie.img} alt="" />
@@ -9,7 +10,7 @@ const Movie = ({ movie }) => {
                 <p><strong>ratings:</strong> {movie.ratings}</p>
                 <p> <strong>Price:</strong> {movie.price}</p>
             </div>
-            <button>Add to cart</button>
+            <button onClick={() => addToCart(movie.id)}>Add to cart</button>
         </div>
     );
 };
