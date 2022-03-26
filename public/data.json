@@ -1,37 +1,86 @@
 [
     {
-        "id": "623e0ee41a27e0c24923b78d",
-        "price": 345,
-        "name": "Monique Barr"
+        "name": "3 Idiots",
+        "id": 1,
+        "img": "https://img.yts.mx/assets/images/movies/3_idiots_2009/medium-cover.jpg",
+        "price": 120,
+        "ratings": 5
     },
     {
-        "id": "623e0ee4e12e99ae130ac50c",
-        "price": 381,
-        "name": "Goodwin Holder"
+        "name": "The Godfather",
+        "id": 2,
+        "img": "https://img.yts.mx/assets/images/movies/The_Godfather_1972/medium-cover.jpg",
+        "price": 200,
+        "ratings": 4
     },
     {
-        "id": "623e0ee4fa49da1ee2630342",
-        "price": 188,
-        "name": "Fernandez Cotton"
+        "name": "Life Is Beautiful",
+        "id": 3,
+        "img": "https://img.yts.mx/assets/images/movies/life_is_beautiful_1997/medium-cover.jpg",
+        "price": 150,
+        "ratings": 4
     },
     {
-        "id": "623e0ee4c9ab276d44d5bdab",
-        "price": 163,
-        "name": "Melendez Kerr"
+        "name": "Titanic",
+        "id": 4,
+        "img": "https://img.yts.mx/assets/images/movies/Titanic_1997/medium-cover.jpg",
+        "price": 175,
+        "ratings": 4.5
     },
     {
-        "id": "623e0ee4a411ccc87e6ef810",
-        "price": 245,
-        "name": "Acosta Tillman"
+        "name": "The Avengers",
+        "id": 5,
+        "img": "https://img.yts.mx/assets/images/movies/The_Avengers_2012/medium-cover.jpg",
+        "price": 150,
+        "ratings": 5
     },
     {
-        "id": "623e0ee474aa371f336169b7",
-        "price": 189,
-        "name": "Roslyn Saunders"
+        "name": "City of God",
+        "id": 6,
+        "img": "https://img.yts.mx/assets/images/movies/city_of_god_2002/medium-cover.jpg",
+        "price": 120,
+        "ratings": 4.7
     },
     {
-        "id": "623e0ee49034450085439516",
-        "price": 90,
-        "name": "Bernadette Morris"
+        "name": "OMG: Oh My God!",
+        "id": 7,
+        "img": "https://img.yts.mx/assets/images/movies/omg_oh_my_god_2012/medium-cover.jpg",
+        "price": 110,
+        "ratings": 5
+    },
+    {
+        "name": "Spider-Man: No Way Home",
+        "id": 8,
+        "img": "https://img.yts.mx/assets/images/movies/spider_man_no_way_home_2021/medium-cover.jpg",
+        "price": 145,
+        "ratings": 4.7
+    },
+    {
+        "name": "The Shawshank Redemption",
+        "id": 9,
+        "img": "https://img.yts.mx/assets/images/movies/The_Shawshank_Redemption_1994/medium-cover.jpg",
+        "price": 200,
+        "ratings": 5
+    },
+    {
+        "name": "The Dark Knight",
+        "id": 10,
+        "img": "https://img.yts.mx/assets/images/movies/The_Dark_Knight_2008/medium-cover.jpg",
+        "price": 95,
+        "ratings": 4
+    },
+    {
+        "name": "Schindler's List",
+        "id": 11,
+        "img": "https://img.yts.mx/assets/images/movies/Schindlers_List_1993/medium-cover.jpg",
+        "price": 109,
+        "ratings": 4.6
+    },
+    {
+        "name": "12 Angry Men",
+        "id": 12,
+        "img": "https://img.yts.mx/assets/images/movies/12_angry_men_1997/medium-cover.jpg",
+        "price": 112,
+        "ratings": 5
     }
 ]

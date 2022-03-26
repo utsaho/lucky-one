@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(22, 22, 54);
+    color: yellow;
+    padding-left: 5%;
+    /* padding-right: 5%; */
+}
+.header a{
+    text-decoration: none;
+    color: yellow;
+    margin-left: 10%;
+}
+.header a:hover{
+    color: orange;
+}
+
+.header >.nav-links{
+    margin-right: 10%;
+}
