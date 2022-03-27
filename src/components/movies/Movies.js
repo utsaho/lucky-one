@@ -30,19 +30,18 @@ const Movies = () => {
             setCart(newCart);
         }
     }
-    let oldClick = 0;
-    const chooseOne = (click) => {
-        console.log(click);
-        if (oldClick === 0 || click === 2) {
-            oldClick = click;
-            if (cart.length === 0) {
-                alert('Please select at least one movie');
-            }
-            else {
-                const choosenIndex = parseInt(Math.random() * cart.length);
-                console.log(cart[choosenIndex].name);
-                alert('I recommend you to watch: ' + cart[choosenIndex].name);
-            }
+    const deleteAll = () => {
+        // cart.length = 0;
+        setCart([])
+    }
+    const chooseOne = () => {
+        if (cart.length === 0) {
+            alert('Please select at least one movie');
+        }
+        else {
+            const choosenIndex = parseInt(Math.random() * cart.length);
+            console.log(cart[choosenIndex].name);
+            alert('I recommend you to watch: ' + cart[choosenIndex].name);
         }
     }
 
@@ -59,7 +58,7 @@ const Movies = () => {
                     cart.map(movie => <MovieCart movie={movie} key={movie.id} deleteFromCart={deleteFromCart}></MovieCart>)
                 }
                 <button className='choose-btn' onClick={() => chooseOne(1)}>CHOOSE 1 FOR ME</button>
-                <button className='choose-btn' onClick={() => chooseOne(2)}>CHOOSE AGAIN</button>
+                <button className='choose-btn' onClick={() => deleteAll()}>CHOOSE AGAIN</button>
             </div>
         </div>
     );
