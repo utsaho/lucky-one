@@ -57,7 +57,7 @@ const Movies = () => {
                 {
                     cart.map(movie => <MovieCart movie={movie} key={movie.id} deleteFromCart={deleteFromCart}></MovieCart>)
                 }
-                <button className='choose-btn' onClick={() => chooseOne(1)}>CHOOSE 1 FOR ME</button>
+                <button className='choose-btn' onClick={() => chooseOne()}>CHOOSE 1 FOR ME</button>
                 <button className='choose-btn' onClick={() => deleteAll()}>CHOOSE AGAIN</button>
             </div>
         </div>
