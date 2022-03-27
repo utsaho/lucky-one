@@ -1,7 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import './Movie.css';
 const Movie = ({ movie, addToCart }) => {
-    // console.log(addToCart);
     return (
         <div className='movie'>
             <img src={movie.img} alt="" />
@@ -10,7 +11,8 @@ const Movie = ({ movie, addToCart }) => {
                 <p><strong>ratings:</strong> {movie.ratings}</p>
                 <p> <strong>Price:</strong> {movie.price}</p>
             </div>
-            <button onClick={() => addToCart(movie)}>Add to cart</button>
+            <button onClick={() => addToCart(movie)}>Add to cart <FontAwesomeIcon icon={faCartShopping} />
+            </button>
         </div>
     );
 };

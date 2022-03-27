@@ -10,25 +10,39 @@ const Movies = () => {
     }, []);
 
     const addToCart = (movie) => {
-        const exist = cart.find(singleMovie => singleMovie.id === movie.id);
-        if (!exist) {
-            const newCart = [...cart, movie];
-            setCart(newCart);
+        if (cart.length >= 4) {
+            alert('You cann\'t add more then 4 movies');
         }
         else {
-            // console.log(cart.indexOf(exist));
-            // console.log(cart);
-
+            const exist = cart.find(singleMovie => singleMovie.id === movie.id);
+            if (!exist) {
+                const newCart = [...cart, movie];
+                setCart(newCart);
+            }
         }
     }
 
     const deleteFromCart = (movie) => {
         const exist = cart.find(singleMovie => singleMovie.id === movie.id);
         if (exist) {
-            // console.log(movie);
             const newCart = [...cart];
             newCart.splice(cart.indexOf(exist), 1);
             setCart(newCart);
+        }
+    }
+    let oldClick = 0;
+    const chooseOne = (click) => {
+        console.log(click);
+        if (oldClick === 0 || click === 2) {
+            oldClick = click;
+            if (cart.length === 0) {
+                alert('Please select at least one movie');
+            }
+            else {
+                const choosenIndex = parseInt(Math.random() * cart.length);
+                console.log(cart[choosenIndex].name);
+                alert('I recommend you to watch: ' + cart[choosenIndex].name);
+            }
         }
     }
 
@@ -40,10 +54,12 @@ const Movies = () => {
                 }
             </div>
             <div className='movieCart'>
-                <h2>Selected Items:</h2> <hr />
+                <h2>Selected Movies:</h2> <hr />
                 {
                     cart.map(movie => <MovieCart movie={movie} key={movie.id} deleteFromCart={deleteFromCart}></MovieCart>)
                 }
+                <button className='choose-btn' onClick={() => chooseOne(1)}>CHOOSE 1 FOR ME</button>
+                <button className='choose-btn' onClick={() => chooseOne(2)}>CHOOSE AGAIN</button>
             </div>
         </div>
     );

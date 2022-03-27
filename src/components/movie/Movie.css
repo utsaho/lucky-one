@@ -6,6 +6,11 @@
     position: relative;
     box-shadow: 10px 10px 10px 10px rgba(163, 161, 161, 0.589);
 }
+@media (max-width: 576px) {
+    .movie{
+        margin-bottom: 0px;
+    }
+}
 .movie img{
     width: 99%;
     border-radius: 10px 10px 0px 0px;
@@ -14,14 +19,14 @@
 
 .movie .movie-details{
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 40px;
     /* margin-top: -8%; */
 }
 .movie>.movie-details p{
-    margin: 1%;
+    margin: 1px;
 }
 .movie>.movie-details .movie-name{
-    margin: 1%;
+    margin: 3px;
 }
 .movie button{
     border: 0;
