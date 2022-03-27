@@ -1,0 +1,30 @@
+.movie-item>small img{
+    width: 40px;
+    border-radius: 10px;
+    margin-right: 2%;
+}
+.movie-item>small h3{
+    text-align: center;
+}
+.movie-item{
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+
+}
+.movie-item small{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.movie-item>small>h2 button{
+    /* text-decoration: none; */
+    border: none;
+    font-size: large;
+    color: rgb(251, 251, 251);
+    margin-right: 5px;
+    background-color: rgba(251, 251, 249, 0.192);
+    padding:6px 9px 6px 9px;
+    /* padding: 10px; */
+    border-radius: 30px;
+}
