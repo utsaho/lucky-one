@@ -9,7 +9,7 @@ const Movie = ({ movie, addToCart }) => {
             <div className='movie-details'>
                 <h4 className='movie-name'>Name: {movie.name}</h4>
                 <p><strong>ratings:</strong> {movie.ratings}</p>
-                <p> <strong>Price:</strong> {movie.price}</p>
+                <p> <strong>Price:</strong> $ {movie.price}</p>
             </div>
             <button onClick={() => addToCart(movie)}>Add to cart <FontAwesomeIcon icon={faCartShopping} />
             </button>
